@@ -1,0 +1,74 @@
+//
+// Extra small devices (phones, than 576px and down)
+//
+@mixin breakpoint-up-xs {
+    @media(max-width: $csshub_breakpoint-xs-max) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down-xs {
+    @media(max-width: $csshub_breakpoint-xs-max) {
+        @content;
+    }
+}
+
+//
+// Small devices (tablets, 576px and up)
+//
+@mixin breakpoint-up-sm {
+    @media(min-width: $csshub_breakpoint-sm-min) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down-sm {
+    @media(min-width: $csshub_breakpoint-sm-min) and (max-width: $csshub_breakpoint-md-min) {
+        @content;
+    }
+}
+
+//
+// Medium devices (desktops, 768px and up)
+//
+@mixin breakpoint-up-md {
+    @media(min-width: $csshub_breakpoint-md-min) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down-md {
+    @media(min-width: $csshub_breakpoint-md-min) and (max-width: $csshub_breakpoint-lg-min) {
+        @content;
+    }
+}
+
+//
+// Large devices (large desktops, 992px and up)
+//
+@mixin breakpoint-up-lg {
+    @media(min-width: $csshub_breakpoint-lg-min) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down-lg {
+    @media(min-width: $csshub_breakpoint-lg-min) and (max-width: $csshub_breakpoint-xl-min) {
+        @content;
+    }
+}
+
+//
+// Extra large devices (large desktops, 1200px and up)
+//
+@mixin breakpoint-up-xl {
+    @media(min-width: $csshub_breakpoint-xl-min) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down-xl {
+    @media(min-width: $csshub_breakpoint-xl-min) {
+        @content;
+    }
+}

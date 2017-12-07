@@ -1,0 +1,27 @@
+// Support IE :(boolean)
+$csshub_support-for-ie: true;
+
+// Set the base font size of the HTML page (px, pt, %)
+$csshub_font-size: 100%;
+
+// Support retina display :(boolean)
+$csshub_support-retina: true;
+
+// Enable data uri :(boolean)
+$csshub_data-uri: false;
+
+// Grid options
+// Extra small devices (phones, than 576px and down)
+$csshub_breakpoint-xs-max: 575px;
+
+// Small devices (tablets, 576px and up)
+$csshub_breakpoint-sm-min: 575px;
+
+// Medium devices (desktops, 768px and up)
+$csshub_breakpoint-md-min: 767px;
+
+// Large devices (large desktops, 992px and up)
+$csshub_breakpoint-lg-min: 991px;
+
+// Extra large devices (large desktops, 1200px and up)
+$csshub_breakpoint-xl-min: 1199px;

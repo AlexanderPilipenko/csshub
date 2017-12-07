@@ -1,0 +1,17 @@
+// Override function url to embedurl
+if $csshub_data-uri
+    url = embedurl
+
+// Media Queries up devices
+$csshub_breakpoint-up-xs = '(max-width: %s)' % $csshub_breakpoint-xs-max
+$csshub_breakpoint-up-sm = '(min-width: %s)' % $csshub_breakpoint-sm-min
+$csshub_breakpoint-up-md = '(min-width: %s)' % $csshub_breakpoint-md-min
+$csshub_breakpoint-up-lg = '(min-width: %s)' % $csshub_breakpoint-lg-min
+$csshub_breakpoint-up-xl = '(min-width: %s)' % $csshub_breakpoint-xl-min
+
+// Media Queries down devices
+$csshub_breakpoint-down-xs = '(max-width: %s)' % $csshub_breakpoint-xs-max
+$csshub_breakpoint-down-sm = s('(min-width: %s) and (max-width: %s)', $csshub_breakpoint-sm-min, $csshub_breakpoint-md-min)
+$csshub_breakpoint-down-md = s('(min-width: %s) and (max-width: %s)', $csshub_breakpoint-md-min, $csshub_breakpoint-lg-min)
+$csshub_breakpoint-down-lg = s('(min-width: %s) and (max-width: %s)', $csshub_breakpoint-lg-min, $csshub_breakpoint-xl-min)
+$csshub_breakpoint-down-xl = '(min-width: %s)' % $csshub_breakpoint-xl-min

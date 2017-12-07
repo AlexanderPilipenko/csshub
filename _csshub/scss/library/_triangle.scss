@@ -1,0 +1,78 @@
+//
+// CSS Triangle Up
+//
+@mixin triangle-up($width, $color) {
+    @include size(0);
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-bottom: $width solid $color;
+}
+
+//
+// CSS Triangle Down
+//
+@mixin triangle-down($width, $color) {
+    @include size(0);
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-top: $width solid $color;
+}
+
+//
+// CSS Triangle Left
+//
+@mixin triangle-left($width, $color) {
+    @include size(0);
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+    border-left: $width solid $color;
+}
+
+//
+// CSS Triangle Right
+//
+@mixin triangle-right($width, $color) {
+    @include size(0);
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+    border-right: $width solid $color;
+}
+
+//
+// Support Triangle line
+//
+@mixin triangle-line($width, $border-first, $border-last, $border-style, $rotate: 45deg) {
+    #{'border-' + $border-first}: $border-style;
+    #{'border-' + $border-last}: $border-style;
+    display: inline-block;
+    @include size($width);
+    @include transform(rotate($rotate));
+}
+
+//
+// CSS Triangle line Up
+//
+@mixin triangle-line-up($width, $border, $rotate: 45deg) {
+    @include triangle-line($width, left, top, $border, $rotate);
+}
+
+//
+// CSS Triangle line Down
+//
+@mixin triangle-line-down($width, $border, $rotate: 45deg) {
+    @include triangle-line($width, bottom, right, $border, $rotate);
+}
+
+//
+// CSS Triangle line Left
+//
+@mixin triangle-line-left($width, $border, $rotate: 45deg) {
+    @include triangle-line($width, bottom, left, $border, $rotate);
+}
+
+//
+// CSS Triangle line Right
+//
+@mixin triangle-line-right($width, $border, $rotate: 45deg) {
+    @include triangle-line($width, top, right, $border, $rotate);
+}

@@ -1,0 +1,74 @@
+//
+// Extra small devices (phones, than 576px and down)
+//
+.breakpoint-up-xs(@args) {
+    @media(max-width: @csshub_breakpoint-xs-max) {
+        @args();
+    }
+};
+
+.breakpoint-down-xs(@args) {
+    @media(max-width: @csshub_breakpoint-xs-max) {
+        @args();
+    }
+};
+
+//
+// Small devices (tablets, 576px and up)
+//
+.breakpoint-up-sm(@args) {
+    @media(min-width: @csshub_breakpoint-sm-min) {
+        @args();
+    }
+};
+
+.breakpoint-down-sm(@args) {
+    @media(min-width: @csshub_breakpoint-sm-min) and (max-width: @csshub_breakpoint-md-min) {
+        @args();
+    }
+};
+
+//
+// Medium devices (desktops, 768px and up)
+//
+.breakpoint-up-md(@args) {
+    @media(min-width: @csshub_breakpoint-md-min) {
+        @args();
+    }
+};
+
+.breakpoint-down-md(@args) {
+    @media(min-width: @csshub_breakpoint-sm-min) and (max-width: @csshub_breakpoint-lg-min) {
+        @args();
+    }
+};
+
+//
+// Large devices (large desktops, 992px and up)
+//
+.breakpoint-up-lg(@args) {
+    @media(min-width: @csshub_breakpoint-lg-min) {
+        @args();
+    }
+};
+
+.breakpoint-down-lg(@args) {
+    @media(min-width: @csshub_breakpoint-lg-min) and (max-width: @csshub_breakpoint-xl-min) {
+        @args();
+    }
+};
+
+//
+// Extra large devices (large desktops, 1200px and up)
+//
+.breakpoint-up-xl(@args) {
+    @media(min-width: @csshub_breakpoint-xl-min) {
+        @args();
+    }
+};
+
+.breakpoint-down-xl(@args) {
+    @media(min-width: @csshub_breakpoint-xl-min) {
+        @args();
+    }
+};
