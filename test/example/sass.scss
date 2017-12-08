@@ -120,6 +120,11 @@ div {
     @include relative(top 0 left 1em);
 }
 
+/* Test position sticky */
+div {
+    @include sticky(top 0 left 1em);
+}
+
 /* Test calc */
 div {
     @include calc(padding, '100px - 5%');

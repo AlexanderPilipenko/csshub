@@ -149,6 +149,12 @@ div {
   left: 1em;
   position: relative; }
 
+/* Test position sticky */
+div {
+  top: 0;
+  left: 1em;
+  position: sticky; }
+
 /* Test calc */
 div {
   padding: -webkit-calc(100px - 5%);

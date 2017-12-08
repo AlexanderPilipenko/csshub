@@ -33,3 +33,10 @@
 @mixin relative($args) {
     @include position(relative, $args);
 }
+
+//
+// Mixin for sticky positioning
+//
+@mixin sticky($args) {
+    @include position(sticky, $args);
+}
